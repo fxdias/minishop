@@ -1,5 +1,5 @@
 import { useEffect } from "react"
-import { BrowserRouter, Routes, Routes, useLocation } from "react-router-dom"
+import { BrowserRouter, Routes, Route, useLocation } from "react-router-dom"
 import Home from "./scenes/home/Home"
 import ItemDetails from "./scenes/itemDetails/ItemDetails"
 import Checkout from "./scenes/checkout/Checkout"
@@ -33,3 +33,5 @@ function App() {
 }
 
 export default App
+
+
