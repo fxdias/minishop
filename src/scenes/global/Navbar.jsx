@@ -1,13 +1,14 @@
 import { useDispatch, useSelector } from "react-redux"
 import { Badge, Box, IconButton } from "@mui/material"
 import {
-    PersonOutlie,
+    PersonOutline,
     ShoppingBagOutlined,
     MenuOutlined,
     SearchOutlined
 } from "@mui/icons-material"
 import { useNavigate } from "react-router-dom"
 import { shades } from "../../theme"
+import { setIsCartOpen } from "../../state"
 
 const Navbar = () => {
     const navigate = useNavigate();
@@ -51,7 +52,7 @@ const Navbar = () => {
                         <SearchOutlined />
                     </IconButton>
                     <IconButton sx={{ color: "black" }}>
-                        <PersonOutlie />
+                        <PersonOutline />
                     </IconButton>
                     <Badge
                         badgeContent={cart.length}
